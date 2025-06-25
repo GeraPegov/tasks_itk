@@ -10,4 +10,3 @@ def process_number_Pool(numbers):
         results = pool.map(factorial_func, numbers)
         finish = time() - start
         return "Pool", results, finish
-

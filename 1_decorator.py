@@ -14,7 +14,9 @@ def lru_cache(maxsize=None):
                 return cache[args]
             else:
                 return cache[args]
+
         return wrapper
+
     return decorator
 
 
@@ -33,7 +35,7 @@ def multiply(a: int, b: int) -> int:
     return a * b
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     assert sum(1, 2) == 3
     assert sum(3, 4) == 7
 

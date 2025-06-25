@@ -17,4 +17,3 @@ def process_number_Process(numbers):
         p.join()
     finish = time() - start
     return "Process, Queue", results, finish
-

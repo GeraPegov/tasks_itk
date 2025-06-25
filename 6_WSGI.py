@@ -17,15 +17,15 @@ with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
             request = conn.recv(1024).decode()
             point = request.splitlines()[0]
             try:
-                path = point.split(' ')[1][1:].strip()
-                api_url = f'https://api.exchangerate-api.com/v4/latest/{path}'
+                path = point.split(" ")[1][1:].strip()
+                api_url = f"https://api.exchangerate-api.com/v4/latest/{path}"
                 response = requests.get(api_url).json()
             except IndexError:
-                path = ''
+                path = ""
             except requests.JSONDecodeError:
-                path = ''
+                path = ""
             if not path:
-                response_body = 'Hello'
+                response_body = "Hello"
                 response = (
                     "HTTP/1.1 200\r\n"
                     "Content-Type: text/html\r\n"
