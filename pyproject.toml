@@ -1,0 +1,35 @@
+[project]
+name = "my_project"
+version = "0.1.0"
+dependencies = [
+    "ruff>=0.12.0",
+]
+
+[tool.ruff]
+# Основные настройки
+line-length = 88           # Максимальная длина строки (как в PEP 8)
+select = [                 # Какие правила проверять
+  "E",   # Ошибки (Indent, Syntax)
+  "F",   # Код-стайл (пробелы, отступы)
+  "W",   # Предупреждения
+  "I",   # Неправильные импорты
+  "UP",  # Совместимость с Python 3.10+
+  "PL",  # Лучшие практики (Best Practices)
+]
+ignore = ["E501"]          # Игнорировать конкретные правила (здесь — длину строки)
+
+# Настройки форматирования (аналог `black`)
+[tool.ruff.format]
+quote-style = "double"     # Кавычки: "double" или "single"
+indent-style = "space"           # Отступы (4 пробела)
+skip-magic-trailing-comma = false  # Висячие запятые в многострочных структурах
+
+# Игнорировать файлы/папки
+exclude = [
+  ".venv",
+  "__pycache__",
+  ".mypy_cache",
+  ".ruff_cache",
+  "migrations",
+  "tests",
+]

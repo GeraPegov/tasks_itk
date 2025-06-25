@@ -1,0 +1,6 @@
+[
+  "https://jsonplaceholder.typicode.com/posts/1",
+  "https://api.openweathermap.org/data/2.5/weather?q=London",
+  "https://api.github.com/users/octocat",
+  "https://api.nasa.gov/planetary/apod?api_key=DEMO_KEY"
+]
