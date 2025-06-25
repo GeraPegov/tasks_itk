@@ -41,7 +41,7 @@ def record(data: dict):
     try:
         with open("response.jsonl", "w") as file:
             file.write(json.dumps(data) + "\n")
-    except IOError as e:
+    except OSError as e:
         print(f"Ошибка записи в файл: {str(e)}")
     except Exception as e:
         print(f"Неизвестная ошибка : {str(e)}")
