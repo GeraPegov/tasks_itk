@@ -6,25 +6,24 @@ dependencies = [
 ]
 
 [tool.ruff]
-# Основные настройки
 line-length = 88          
 select = [              
-  "E",   # Ошибки (Indent, Syntax)
-  "F",   # Код-стайл (пробелы, отступы)
-  "W",   # Предупреждения
-  "I",   # Неправильные импорты
-  "UP",  # Совместимость с Python 3.10+
-  "PL",  # Лучшие практики (Best Practices)
+  "E",
+  "F",
+  "W",
+  "I", 
+  "UP", 
+  "PL",  
 ]
 ignore = ["E501"]         
 
-# Настройки форматирования (аналог `black`)
+
 [tool.ruff.format]
 quote-style = "double"   
 indent-style = "space"           
 skip-magic-trailing-comma = false  
 
-# Игнорировать файлы/папки
+
 exclude = [
   ".venv",
   "__pycache__",
