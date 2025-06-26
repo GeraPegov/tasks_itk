@@ -32,6 +32,4 @@ exclude = [
   ".ruff_cache",
   "migrations",
   "tests",
-  "pyproject.toml",
-  "uv.lock"
 ]
