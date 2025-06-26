@@ -14,4 +14,9 @@ if __name__ == "__main__":
         process_number(list_of_numbers),
     ]
 
-    print(tabulate(func, headers=["Метод", "Результат выполнения", "Время выполнения"]))
+    print(tabulate(func, headers=[
+        "Метод",
+        "Результат выполнения",
+        "Время выполнения"
+        ]
+        ))
