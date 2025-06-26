@@ -7,8 +7,8 @@ dependencies = [
 
 [tool.ruff]
 # Основные настройки
-line-length = 88           # Максимальная длина строки (как в PEP 8)
-select = [                 # Какие правила проверять
+line-length = 88          
+select = [              
   "E",   # Ошибки (Indent, Syntax)
   "F",   # Код-стайл (пробелы, отступы)
   "W",   # Предупреждения
@@ -16,13 +16,13 @@ select = [                 # Какие правила проверять
   "UP",  # Совместимость с Python 3.10+
   "PL",  # Лучшие практики (Best Practices)
 ]
-ignore = ["E501"]          # Игнорировать конкретные правила (здесь — длину строки)
+ignore = ["E501"]         
 
 # Настройки форматирования (аналог `black`)
 [tool.ruff.format]
-quote-style = "double"     # Кавычки: "double" или "single"
-indent-style = "space"           # Отступы (4 пробела)
-skip-magic-trailing-comma = false  # Висячие запятые в многострочных структурах
+quote-style = "double"   
+indent-style = "space"           
+skip-magic-trailing-comma = false  
 
 # Игнорировать файлы/папки
 exclude = [
